@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cabinet>
+    <nom>Soins à Grenoble</nom>
+    <adresse>
+        <numero>60</numero>
+        <rue>Rue de la Chimie</rue>
+        <codePostal>38041</codePostal>
+        <ville>Grenoble</ville>
+    </adresse>
+    <infirmiers>
+        <infirmier id="001">
+            <nom>Fréchie</nom>
+            <prénom>Sarah</prénom>
+            <photo>sarah.png</photo>
+        </infirmier>
+        <infirmier id="002">
+            <nom>Stické</nom>
+            <prénom>Sophie</prénom>
+            <photo>sophie.png</photo>
+        </infirmier>
+        <infirmier id="003">
+            <nom>Ochon</nom>
+            <prénom>Paul</prénom>
+            <photo>paul.png</photo>
+        </infirmier>
+    </infirmiers>
+    <patients>
+        <patient>
+            <!-- Homme né en aout 98 en France, à Marseille (n 55 en bouches du rhone) 458e naissance -->
+            <nom>Alécole</nom>
+            <prénom>Yvon</prénom>
+            <sexe>M</sexe>
+            <naissance>1998-08-22</naissance>
+            <numéro>198082205545852</numéro>
+            <adresse>
+                <étage>6</étage>
+                <numéro>50</numéro>
+                <rue>Avenue Félix Viallet</rue>
+                <ville>Grenoble</ville>
+                <codePostal>38031</codePostal>                <!-- UN nombre à 5 chiffres -->
+            </adresse>
+            <visite date="2015-12-08" intervenant="001">
+                <acte id="109" />
+            </visite>
+        </patient>
+    </patients>
+</cabinet>
