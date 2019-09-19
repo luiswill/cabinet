@@ -1,0 +1,40 @@
+
+table{
+  width:100%;
+}
+td{
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+h1{
+  text-align: center;
+  color: white;
+  font-weight:bold;
+}
+.année{
+  background-color: #f2f2f2;
+  text-align: right;
+
+}
+.titre{
+  background-color: #e2e2e2;
+}
+.img{
+  text-align: center;
+  background-color: #c9c9c9;
+}
+.fond_noir{
+  background-color:black;
+}
+.fond_rouge{
+  background-color:#c0504d;
+  color :#e2e2e2;
+  text-align: center;
+}
+.fond_gris_foncé{
+  text-align: right;
+  vertical-align: top;
+  background-color: #c9c9c9;
+}
