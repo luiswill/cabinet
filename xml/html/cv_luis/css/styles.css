@@ -1,0 +1,50 @@
+html {
+    --main-color: blueviolet;
+}
+
+body {
+    max-width: 1028px;
+    margin: auto;
+    border: 1px solid var(--main-color);
+    padding: 3em 5em;
+    font-family: 'Verdana';
+
+}
+
+table td {
+    padding-bottom: 7px;
+}
+
+.profile-image {
+    width: 200px;
+    float: right;
+    margin-right: 20px;
+}
+
+.cv-headline {
+    background-color: var(--main-color);
+    color: white;
+    width: 15%;
+    padding-left: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.category {
+    margin-bottom: 60px;
+}
+
+.category table tr td:nth-child(2) {
+    padding-left: 50px;
+}
+
+.subcategory-headline {
+    border-left: 5px solid var(--main-color);
+    padding-left: 30px;
+}
+
+.category.stages h4 .arrow {
+    color: var(--main-color);
+    margin-left: 15px;
+}
+
