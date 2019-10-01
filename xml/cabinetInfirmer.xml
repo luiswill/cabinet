@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cabinet>
+<cabinet
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-Instance"
+    xmlns="http://www.ujf-grenoble.fr/l3miage/medical"
+    xsi:schemaLocation="http://www.ujf-grenoble.fr/l3miage/medical  ../xsd/cabinetInfirmier.xsd"
+    >
     <nom>Soins à Grenoble</nom>
     <adresse>
         <numero>60</numero>
         <rue>Rue de la Chimie</rue>
-        <codePostal>38041</codePostal>
         <ville>Grenoble</ville>
+        <codePostal>38041</codePostal>
     </adresse>
     <infirmiers>
         <infirmier id="001">
