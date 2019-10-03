@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cabinet>
+<cabinet xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns='http://www.ujf-grenoble.fr/l3miage/medical'
+    xsi:schemaLocation='http://www.ujf-grenoble.fr/l3miage/medical ../xsd/cabinetInfirmier.xsd'>
     <nom>Soins à Grenoble</nom>
     <adresse>
-        <numero>60</numero>
+        <numéro>60</numéro>
         <rue>Rue de la Chimie</rue>
-        <codePostal>38041</codePostal>
         <ville>Grenoble</ville>
+        <codePostal>38041</codePostal>
     </adresse>
     <infirmiers>
         <infirmier id="001">
@@ -57,7 +59,7 @@
                 <codePostal>38700</codePostal>                <!-- UN nombre à 5 chiffres -->
             </adresse>
             <visite date="2015-12-08" intervenant="300">
-                <acte id="" />
+                <acte/>
             </visite>
         </patient>
         <patient>
@@ -67,13 +69,12 @@
             <naissance>1975-03-25</naissance>
             <numéro>198082205545852</numéro>
             <adresse>
-                <étage></étage>
                 <numéro>50</numéro>
                 <rue>rue Casimir Brenier</rue>
                 <ville>Grenoble</ville>
                 <codePostal>38000</codePostal>                <!-- UN nombre à 5 chiffres -->
             </adresse>
-            <visite date="2015-12-08" intervenant="">
+            <visite date="2015-12-08">
                 <acte id="101" />
                 <acte id="105" />
             </visite>
@@ -85,13 +86,12 @@
             <naissance>2011-08-02</naissance>
             <numéro>198082205545852</numéro>
             <adresse>
-                <étage></étage>
                 <numéro>25</numéro>
                 <rue>25 rue des Martyrs</rue>
                 <ville>Grenoble</ville>
                 <codePostal>38000</codePostal>                <!-- UN nombre à 5 chiffres -->
             </adresse>
-            <visite date="2015-12-08" intervenant="">
+            <visite date="2015-12-08">
                 <acte id="111" />
             </visite>
         </patient>
