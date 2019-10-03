@@ -1,14 +1,9 @@
-html {
-    --main-color: blueviolet;
-}
-
 body {
     max-width: 1028px;
     margin: auto;
-    border: 1px solid var(--main-color);
+    border: 1px solid blueviolet;
     padding: 3em 5em;
     font-family: 'Verdana';
-
 }
 
 table td {
@@ -22,7 +17,7 @@ table td {
 }
 
 .cv-headline {
-    background-color: var(--main-color);
+    background-color: blueviolet;
     color: white;
     width: 15%;
     padding-left: 20px;
@@ -39,12 +34,20 @@ table td {
 }
 
 .subcategory-headline {
-    border-left: 5px solid var(--main-color);
+    border-left: 5px solid blueviolet;
     padding-left: 30px;
 }
 
 .category.stages h4 .arrow {
-    color: var(--main-color);
+    color: blueviolet;
     margin-left: 15px;
 }
 
+#partenaire {
+    text-decoration: none;
+    color: black;
+}
+
+#partenaire:hover {
+    cursor: text;
+}
