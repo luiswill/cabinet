@@ -1,0 +1,21 @@
+.infirmier-headline {
+    text-decoration: underline;
+}
+
+.infirmier-announcement {
+    border-left: orange;
+    padding-left: 10px;
+}
+
+.patients {
+    border: 1px solid black;
+}
+
+.patient {
+    border: 1px solid peru;
+    background-color: peru;
+    color: white;
+    font-size: 18px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}

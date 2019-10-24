@@ -14,30 +14,12 @@
         <html>
             <head>
                 <title>Visites à faire</title>
-                <style>
-                    .infirmier-headline {
-                        text-decoration: underline;
-                    }
-
-                    .infirmier-announcement {
-                        border-left: orange;
-                        padding-left: 10px;
-                    }
-
-                    .patients {
-                        border: 1px solid black;
-                    }
-
-                    .patient {
-                        border: 1px solid peru;
-                        background-color: peru;
-                        color: white;
-                        font-size: 18px;
-                        padding-left: 30px;
-                        margin-bottom: 30px;
-                    }
-
-                </style>
+                <link>
+                    <xsl:attribute name="href">../css/cabinet.css</xsl:attribute>
+                    <xsl:attribute name="type">text/css</xsl:attribute>
+                    <xsl:attribute name="rel">stylesheet</xsl:attribute>
+                </link>
+                
             </head>
 
             <script>
