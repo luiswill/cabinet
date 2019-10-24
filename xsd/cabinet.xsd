@@ -26,6 +26,16 @@
         </xsd:sequence>
     </xsd:complexType>
 
+   <xsd:simpleType name="date">
+        <xsd:restriction base="xsd:date">
+        </xsd:restriction>
+    </xsd:simpleType>
+
+   <xsd:simpleType name="string">
+        <xsd:restriction base="xsd:string">
+        </xsd:restriction>
+    </xsd:simpleType>
+
     <xsd:simpleType name="CodePostal">
         <xsd:restriction base="xsd:string">
             <xsd:pattern value="\d{5}"/>
@@ -42,10 +52,17 @@
         <xsd:sequence>
             <xsd:element name="nom" type="xsd:string"/>
             <xsd:element name="prénom" type="xsd:string"/>
-            <xsd:element name="photo" type="xsd:string"/>
+            <xsd:element name="photo" type="photo"/>
         </xsd:sequence>
         <xsd:attribute name="id" type="Id"/>
     </xsd:complexType>
+    
+    <xsd:simpleType name="photo">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[a-zéàùîçèêëûô]{1,}((.jpg)|(.png))"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
 
     <xsd:simpleType name="Id">
         <xsd:restriction base="xsd:string">
@@ -67,7 +84,7 @@
             <xsd:element name="naissance" type="xsd:date"/>
             <xsd:element name="numéro" type="Numéro"/>
             <xsd:element name="adresse" type="Adresse"/>
-            <xsd:element name="visite" type="Visite"/>
+            <xsd:element name="visite" type="Visite" maxOccurs="unbounded"/>
         </xsd:sequence>
     </xsd:complexType>
 
@@ -80,7 +97,8 @@
 
     <xsd:simpleType name="Numéro">
         <xsd:restriction base="xsd:string">
-            <xsd:pattern value="\d{15}"/>
+            
+            <xsd:pattern value="([1-4]|[7-8])([0-9]{2})((0[1-9])|(1[0-2])|(62)|(63))(((0[1-9])|(1[0-9])|(2[1-9])|([3-9][0-9])|(2A)|(2B))((00[1-9])|(0[1-9][0-9])|([1-9][0-8][0-9])|990)|((9[7-8][0-9])((0[0-9])|([1-8][0-9])|90)))((00[1-9])|(0[1-9][0-9])|([1-9][0-9][0-9]))((0[1-9])|([1-8][0-9])|(9[0-7]))"/>
         </xsd:restriction>
     </xsd:simpleType>
 
