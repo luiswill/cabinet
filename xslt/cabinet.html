@@ -1,0 +1,76 @@
+<html xmlns:act="http://www.ujf-grenoble.fr/l3miage/actes" xmlns:med="http://www.ujf-grenoble.fr/l3miage/medical" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Visites &agrave; faire</title>
+        <link href="../css/cabinet.css" type="text/css" rel="stylesheet">
+    </head>
+    <script>
+                
+                    function openFacture(prenom, nom, actes) {
+                        var width  = 500;
+                        var height = 300;
+                        if(window.innerWidth) {
+                            var left = (window.innerWidth-width)/2;
+                            var top = (window.innerHeight-height)/2;
+                        }
+                        else {
+                            var left = (document.body.clientWidth-width)/2;
+                            var top = (document.body.clientHeight-height)/2;
+                        }
+                        var factureWindow = window.open('','facture','menubar=yes, scrollbars=yes, top='+top+', left='+left+', width='+width+', height='+height+'');
+                        factureText = "Facture pour : " + prenom + " " + nom;
+                        factureWindow.document.write(factureText);
+                    }
+                    
+            </script>
+    <body>
+        <h4 class="infirmier-headline">Bonjour  Fr&eacute;chie</h4>
+        <p class="infirmier-announcement">Aujourd'hui, vous avez 2 patients.</p>
+        <div class="patients">
+            <div class="patient">
+                <p>Nom : Al&eacute;cole</p>
+                <p>
+                    Adresse : 50, 
+                avenue F&eacute;lix Viallet
+                    <br>
+                    38031
+                    <br>
+                    Grenoble
+                </p>
+                <h3>Soins &agrave; effectuer :</h3>
+                            Injection sous-cutan&eacute;e.
+        
+                <br>
+                <input type="button" value="Facture" onclick="
+                    openFacture('Yvon',
+                                'Al&eacute;cole',
+                                '')
+                ">
+            </div>
+            <div class="patient">
+                <p>Nom : Pien</p>
+                <p>
+                    Adresse : , 
+                rue Casimir Brenier
+                    <br>
+                    38000
+                    <br>
+                    Grenoble
+                </p>
+                <h3>Soins &agrave; effectuer :</h3>
+                 
+            Pr&eacute;l&egrave;vement par ponction veineuse directe
+        
+                <br>
+                            Injection intraveineuse directe en s&eacute;rie.
+        
+                <br>
+                <input type="button" value="Facture" onclick="
+                    openFacture('Oscare',
+                                'Pien',
+                                '')
+                ">
+            </div>
+        </div>
+    </body>
+</html>
